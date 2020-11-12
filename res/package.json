@@ -1,0 +1,13 @@
+{
+  "name": "yiwaplib",
+  "version": "1.0.0",
+  "dependencies": {},
+  "main": "lib/yiwaplib.js",
+  "typings": "types/index.d.ts",
+  "types": "types/index.d.ts",
+  "publishConfig": {
+    "registry": "http://nexus3.erp2.itsmycar.cn/repository/yiautos-npm-local/"
+  },
+  "devDependencies": {
+  }
+}

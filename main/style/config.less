@@ -1,0 +1,49 @@
+@theme-color: #00beba;
+@success-color: #64c832;
+@warning-color: #ffb400;
+@error-color: #f03232;
+@alter-box-background-color: #5e6d82;
+@alter-box-title-color: #fff;
+@modal-box-background-color: #5e6d82;
+@modal-box-title-color: #fff;
+
+.flexible(@flexDirection: row, @align: flex-start, @justify: flex-start) {
+  display: flex;
+  flex-direction: @flexDirection;
+  align-items: @align;
+  justify-content: @justify;
+}
+
+.single-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.double-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+}
+
+.font-semi(@fontSize, @color) {
+  font-family: PingFangSC-Semibold;
+  font-size: @fontSize;
+  color: @color;
+}
+
+.font-medium(@fontSize, @color) {
+  font-family: PingFangSC-Medium;
+  font-size: @fontSize;
+  color: @color;
+}
+
+.font-regular(@fontSize, @color) {
+  font-family: PingFangSC-Regular;
+  font-size: @fontSize;
+  color: @color;
+}

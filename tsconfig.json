@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "strict": false,
+    "declaration": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["webpack-env", "node", "jest"],
+    "paths": {
+      "@/*": ["main/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": [
+//    "document/**/*.ts",
+//    "document/**/*.tsx",
+//    "document/**/*.vue",
+//    "main/**/*.ts",
+//    "main/**/*.tsx",
+//    "main/**/*.vue",
+//    "example/**/*.ts",
+//    "example/**/*.tsx",
+//    "example/**/*.vue",
+    "test/**/*.ts",
+    "test/**/*.tsx",
+    "node_modules/@types/mocha/index.d.ts",
+    "node_modules/@types/mocha/index.d.ts",
+    "node_modules/@types/mocha/index.d.ts",
+    "node_modules/@types/jest/index.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,76 @@
+{
+  "name": "yiautos-commons-wap",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "dev-document": "vue-cli-service serve --mode document",
+    "dev-example": "vue-cli-service serve --mode example",
+    "build-document": "vue-cli-service build --mode document",
+    "build-example": "vue-cli-service build --mode example",
+    "inspect": "vue-cli-service inspect",
+    "test": "jest --coverage -u",
+    "output": "vue-cli-service build --report --mode library --target lib --name yiwaplib ./main/index.ts && cd ./shell && ./build_dist.sh"
+  },
+  "dependencies": {
+    "amfe-flexible": "^2.2.1",
+    "axios": "^0.19.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.8.0",
+    "babel-polyfill": "^6.26.0",
+    "crypto-js": "^3.1.9-1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "normalize.css": "^8.0.1",
+    "numeral": "^2.0.6",
+    "vant": "^2.2.12",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-property-decorator": "^8.1.0",
+    "vue-router": "^3.0.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.17",
+    "@types/mocha": "^5.2.7",
+    "@types/numeral": "^0.0.26",
+    "@vue/cli-plugin-typescript": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "eslint": "^6.0.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "postcss-pxtorem": "^4.0.1",
+    "prettier": "^1.18.2",
+    "raw-loader": "^3.1.0",
+    "sass": "^1.20.1",
+    "sass-loader": "^7.1.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue-jest": "^3.0.4",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "diagnostics": false
+      }
+    },
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      ".*\\.(vue)$": "vue-jest",
+      "^.+\\.tsx?$": "ts-jest",
+      "^.+\\.ts?$": "ts-jest"
+    },
+    "coverageDirectory": "<rootDir>/report/coverage",
+    "testURL": "http://localhost/",
+    "testRegex": "(/test/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?|js?|ts?)$"
+  }
+}
